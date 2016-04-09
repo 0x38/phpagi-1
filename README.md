@@ -3,22 +3,26 @@ A modernized version of the original *phpagi* project
 (http://phpagi.sourceforge.net/).
 
 ## Installation
-To install, use composer:
 
+The suggested installation method is via [composer](https://getcomposer.org/):
+
+```sh
+composer require agiphlow/phpagi
+```
+
+** Note: ** `agiphlow/phpagi` is still in development, make sure to set
+the minimum stability in your `composer.json` to `dev`:
 ```json
 {
-	"require": {
-		"agiphlow/phpagi": "master-dev"
-	}
+	...
+	"minimum-stability": "dev"
+	...
 }
 ```
 
-## Sample script
+## Usage
 
-The following script will reproduce the sound `welcome`,
-usually included on a clean Asterisk installation
-(see `/var/lib/asterisk/sounds` for more sounds).
-Make sure the script file is executable.
+Create the script `agi.php` with the following content:
 
 ```php
 #!/usr/bin/env php
@@ -39,6 +43,12 @@ $agi->stream_file('welcome');
 
 // hangup call
 $agi->hangup();
+```
+
+Make sure the script is executable:
+
+```
+chmod a+x agi.php
 ```
 
 To test it, you will need to add an extension to your
