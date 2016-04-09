@@ -1,0 +1,23 @@
+{
+    "name": "agiphlow/phpagi",
+    "description": "A modernized version of the phpagi class.",
+    "keywords": ["agi", "asterisk", "ivr", "agiphlow", "flow"],
+    "homepage": "http://github.com/agiphlow/phpagi",
+    "type": "library",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Agustín Gutiérrez",
+            "email": "agusting@agiphlow.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Agiphlow\\PhpAgi\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
