@@ -10,13 +10,12 @@ The suggested installation method is via [composer](https://getcomposer.org/):
 composer require agiphlow/phpagi
 ```
 
-** Note: ** `agiphlow/phpagi` is still in development, make sure to set
+**Note:** `agiphlow/phpagi` is still in development, make sure to set
 the minimum stability in your `composer.json` to `dev`:
+
 ```json
 {
-	...
 	"minimum-stability": "dev"
-	...
 }
 ```
 
